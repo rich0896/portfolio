@@ -88,4 +88,8 @@
     .smicons {
         margin-top: -5px !important;
     }
+
+    h1 {
+        font-size: 60%;
+    }
 }
