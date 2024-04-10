@@ -1,4 +1,6 @@
 # Web Development II Final - Portfolio
+## Reference can be found in the files as UX_Wireframe_Mockup.pdf or by visiting [Figma](https://www.figma.com/file/z4Pb56RruVUq6xy37sJhhi/UX-Wireframe?type=design&node-id=0%3A1&mode=design&t=eq7Y6e73B84zhXsh-1).
+
 > *"Tell us about your process, challenges you faced during development and how you overcame those changes. What have you learned by creating your web portfolio?"*
 
 I started with the foundation. Luckily my portfolio design at it's core is fairly simple; nav with a row of buttons and a logo, rectangle for banner image and text, spot for body content, footer with row of social media icons. When it came to making the custom shapes for the elements, Tailwind made it significantly easier, and allowed me to use custom colours and other modifiers to make it even more streamlined.
