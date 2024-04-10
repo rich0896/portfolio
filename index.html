@@ -19,6 +19,19 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#6996f7">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="NetForge">
+    <meta name="application-name" content="NetForge">
+    <meta name="msapplication-TileColor" content="#6996f7">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#6996f7">
 </head>
 
 <body class="tw-bg-cbg">
@@ -26,15 +39,15 @@
     <div class="tw-flex tw-flex-col tw-justify-center tw-bg-cbg">
         <!-- Skip links container, hidden using bootstrap -->
         <ul class="skip-links">
-            <li><a class="visually-hidden-focusable tw-text-white" href="#nav">Skip to nav</a></li>
-            <li><a class="visually-hidden-focusable tw-text-white" href="#main">Skip to main content</a></li>
-            <li><a class="visually-hidden-focusable tw-text-white" href="#foot">Skip to footer</a></li>
+            <li><a class="visually-hidden-focusable tw-text-white" href="#nav" aria-hidden="true">Skip to nav</a></li>
+            <li><a class="visually-hidden-focusable tw-text-white" href="#main" aria-hidden="true">Skip to main content</a></li>
+            <li><a class="visually-hidden-focusable tw-text-white" href="#foot" aria-hidden="true">Skip to footer</a></li>
         </ul>
 
         <!-- Page header, containing page navigation -->
-        <header class="tw-flex tw-w-full tw-justify-between tw-gap-5 tw-bg-cbg tw-px-16 tw-py-7 tw-text-center tw-text-3xl tw-font-semibold tw-text-black tw-max-md:tw-max-tw-w-full tw-max-md:tw-flex-wrap tw-max-md:tw-px-5">
+        <header class="tw-flex tw-w-full tw-justify-between tw-gap-5 tw-bg-cbg tw-px-16 tw-py-7 tw-text-center tw-text-3xl tw-font-semibold tw-text-black tw-max-md:tw-max-tw-w-full tw-max-md:tw-flex-wrap tw-max-md:tw-px-5" role="banner">
             <!-- Nav section, containing links and mobile sidebar -->
-            <nav id="nav" class="tw-my-auto tw-flex tw-gap-5 tw-max-md:tw-flex-wrap">
+            <nav id="nav" class="tw-my-auto tw-flex tw-gap-5 tw-max-md:tw-flex-wrap" role="navigation">
                 <!-- pushbar.js sidebar with content -->
                 <div data-pushbar-id="mypushbar1" data-pushbar-direction="left" class="mobile-sidebar text-white tw-text-left tw-p-0 tw-m-0">
                     <!-- Close button for sidebar -->
@@ -44,7 +57,7 @@
                     <hr>
                     <!-- Sidebar navigation links -->
                     <ul>
-                        <li class="p-3"><a href="./index.html">Portfolio</a></li>
+                        <li class="p-3"><a href="./index.html" aria-current="true">Portfolio</a></li>
                         <li class="p-3"><a href="./about-us.html">About Us</a></li>
                         <li class="p-3"><a href="./contact-us.html">Contact Us</a></li>
                     </ul>
@@ -56,12 +69,12 @@
                             <path fill="none" stroke="#6996F7" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M7.95 11.95h32m-32 12h32m-32 12h32" />
                         </svg>
                         <!-- Hidden text to describe button -->
-                        <p class="visually-hidden">Open sidebar</p>
+                        <p class="visually-hidden" aria-hidden="true">Open sidebar</p>
                     </button>
                 </div>
                 <!-- Non-mobile navigation links -->
                 <a href="./index.html"
-                    class="dnav tw-justify-center tw-whitespace-nowrap tw-rounded-md tw-border tw-border-solid tw-border-cblue tw-bg-clbg tw-px-10 tw-py-4 tw-text-cblue">Portfolio</a>
+                    class="dnav tw-justify-center tw-whitespace-nowrap tw-rounded-md tw-border tw-border-solid tw-border-cblue tw-bg-clbg tw-px-10 tw-py-4 tw-text-cblue" aria-current="true">Portfolio</a>
                 <a href="./about-us.html" class="dnav tw-justify-center tw-rounded-md tw-bg-cblue tw-px-9 tw-py-4">About
                     Us</a>
                 <a href="./contact-us.html" class="dnav tw-justify-center tw-rounded-md tw-bg-cblue tw-px-6 tw-py-4">Contact Us</a>
@@ -71,7 +84,7 @@
         </header>
 
         <!-- Hero / banner image section -->
-        <section class="tw-relative tw-min-h-[248px] tw-w-full tw-flex-col tw-items-center tw-justify-center tw-overflow-hidden tw-whitespace-nowrap tw-px-16 tw-pb-20 tw-pt-20 tw-text-center tw-text-8xl tw-font-semibold tw-text-white tw-max-md:tw-max-tw-w-full tw-max-md:tw-px-5 tw-max-md:tw-text-4xl">
+        <section class="tw-relative tw-min-h-[248px] tw-w-full tw-flex-col tw-items-center tw-justify-center tw-overflow-hidden tw-whitespace-nowrap tw-px-16 tw-pb-20 tw-pt-20 tw-text-center tw-text-8xl tw-font-semibold tw-text-white tw-max-md:tw-max-tw-w-full tw-max-md:tw-px-5 tw-max-md:tw-text-4xl" role="banner">
             <!-- Responsive, optimized banner image -->
             <picture>
                 <source srcset="./images/banner/desktop/newbanner-960_x_165.png,
@@ -98,7 +111,7 @@
         </section>
 
         <!-- Main content block, containing cards leading to portfolio pages -->
-        <main id="main" class="tw-flex tw-w-full tw-flex-row tw-justify-center tw-bg-clbg tw-px-3.5 tw-py-6 tw-text-center tw-font-semibold tw-max-md:tw-max-w-full">
+        <main id="main" class="tw-flex tw-w-full tw-flex-row tw-justify-center tw-bg-clbg tw-px-3.5 tw-py-6 tw-text-center tw-font-semibold tw-max-md:tw-max-w-full" role="main">
             <!-- Organizational card wrapper -->
             <div class="tw-flex tw-gap-3 tw-max-md:tw-flex-wrap tw-px-6">
                 <!-- Card 1: Our Designs -->
@@ -124,7 +137,7 @@
                         </picture>
                         <!-- Yellow call-to-action -->
                         <div class="tw-absolute tw-bottom-0 tw-right-0 p-4">
-                            <a href="./portfolio/designs.html" class="btn tw-bg-cyellow">Click here to view ></a>
+                            <a href="./portfolio/designs.html" class="btn tw-bg-cyellow" aria-label="Go to our designs">Click here to view ></a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +164,7 @@
                         </picture>
                         <!-- Yellow call-to-action -->
                         <div class="tw-absolute tw-bottom-0 tw-right-0 p-4">
-                            <a href="./portfolio/services.html" class="btn tw-bg-cyellow">Click here to view ></a>
+                            <a href="./portfolio/services.html" class="btn tw-bg-cyellow" aria-label="Go to our services">Click here to view ></a>
                         </div>
                     </div>
                 </div>
@@ -178,7 +191,7 @@
                         </picture>
                         <!-- Yellow call-to-action -->
                         <div class="tw-absolute tw-bottom-0 tw-right-0 p-4">
-                            <a href="./portfolio/testimonials.html" class="btn tw-bg-cyellow">Click here to view ></a>
+                            <a href="./portfolio/testimonials.html" class="btn tw-bg-cyellow" aria-label="Go to our testimonials">Click here to view ></a>
                         </div>
                     </div>
                 </div>
@@ -186,7 +199,7 @@
         </main>
 
         <!-- Footer, containing copyright text and social media icons -->
-        <footer id="foot" class="tw-flex tw-w-full tw-flex-col tw-items-start tw-bg-cbg tw-px-16 tw-pb-4 tw-pt-7 tw-max-md:tw-max-w-full tw-max-md:tw-px-5">
+        <footer id="foot" class="tw-flex tw-w-full tw-flex-col tw-items-start tw-bg-cbg tw-px-16 tw-pb-4 tw-pt-7 tw-max-md:tw-max-w-full tw-max-md:tw-px-5" role="contentinfo">
             <!-- Simple copyright text -->
             <p class="tw-text-base tw-font-semibold tw-text-cblue">&copy; Camden Richter 2024</p>
             <!-- Social media icon container -->
@@ -199,7 +212,7 @@
                             d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9z" />
                     </svg>
                     <!-- Hidden text to describe link -->
-                    <p class="visually-hidden tw-text-white">LinkedIn</p>
+                    <p class="visually-hidden tw-text-white" aria-hidden="true">LinkedIn</p>
                 </a>
                 <!-- Github -->
                 <a target="_blank" href="https://github.com">
@@ -209,7 +222,7 @@
                             d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48M277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8c0-5.4.2-33 .2-55.3c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6c-14.1 0-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 13.9.2 36.5.2 40.6c0 4.3-3 9.5-11.5 8c-66-22.1-112.2-84.9-112.2-158.3c0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3m-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7.6 3.9 1.9c.3 1.3-1 2.6-3 3m-9.5-.9c0 1.3-1.5 2.4-3.5 2.4c-2.2.2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7.9 3.7 2.4m-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3c-1.9-.4-3.2-1.9-2.8-3.2c.4-1.3 2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4m-12.3-5.4c-.9 1.1-2.8.9-4.3-.6c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3.6c1.3 1.3 1.8 3.3.9 4.1m-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1m-6.5-9.7c-.9.9-2.4.4-3.5-.6c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5.6c1.1 1.3 1.3 2.8.4 3.5m-6.7-7.4c-.4.9-1.7 1.1-2.8.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3.7 1.9 1.8 1.5 2.6" />
                     </svg>
                     <!-- Hidden text to describe link -->
-                    <p class="visually-hidden tw-text-white">Github</p>
+                    <p class="visually-hidden tw-text-white" aria-hidden="true">Github</p>
                 </a>
                 <!-- Twitter -->
                 <a target="_blank" href="https://twitter.com">
@@ -219,7 +232,7 @@
                             d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48m-48.9 158.8c.2 2.8.2 5.7.2 8.5c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3.6 10.4.8 15.8.8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34" />
                     </svg>
                     <!-- Hidden text to describe link -->
-                    <p class="visually-hidden tw-text-white">Twitter / X</p>
+                    <p class="visually-hidden tw-text-white" aria-hidden="true">Twitter / X</p>
                 </a>
                 <!-- Instagram -->
                 <a target="_blank" href="https://instagram.com">
@@ -229,7 +242,7 @@
                             d="M224 202.66A53.34 53.34 0 1 0 277.36 256A53.38 53.38 0 0 0 224 202.66m124.71-41a54 54 0 0 0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33s-1.85 73.27 6.47 94.34a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33ZM224 338a82 82 0 1 1 82-82a81.9 81.9 0 0 1-82 82m85.38-148.3a19.14 19.14 0 1 1 19.13-19.14a19.1 19.1 0 0 1-19.09 19.18ZM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48m-17.12 290c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.59 1.49-132 0c-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61 0-132c1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.59-1.49 132 0c25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05c1.49 26.32 1.49 105.44 0 131.88" />
                     </svg>
                     <!-- Hidden text to describe link -->
-                    <p class="visually-hidden tw-text-white">Instagram</p>
+                    <p class="visually-hidden tw-text-white" aria-hidden="true">Instagram</p>
                 </a>
                 <!-- Facebook -->
                 <a target="_blank" href="https://facebook.com">
@@ -239,7 +252,7 @@
                             d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2" />
                     </svg>
                     <!-- Hidden text to describe link -->
-                    <p class="visually-hidden tw-text-white">Facebook</p>
+                    <p class="visually-hidden tw-text-white" aria-hidden="true">Facebook</p>
                 </a>
             </div>
         </footer>

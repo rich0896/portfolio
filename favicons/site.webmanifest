@@ -1,0 +1,14 @@
+{
+    "name": "NetForge",
+    "short_name": "NetForge",
+    "icons": [
+        {
+            "src": "/favicons/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#6996f7",
+    "background_color": "#6996f7",
+    "display": "standalone"
+}
