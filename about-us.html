@@ -24,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="manifest" href="./favicons/site.webmanifest">
     <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#6996f7">
     <link rel="shortcut icon" href="./favicons/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="NetForge">
@@ -111,10 +111,49 @@
         </section>
 
         <!-- Main content block, containing cards leading to portfolio pages -->
-        <main id="main" class="tw-flex tw-w-full tw-flex-row tw-justify-center tw-bg-clbg tw-px-3.5 tw-py-6 tw-text-center tw-font-semibold tw-max-md:tw-max-w-full" role="main">
-            <!-- Organizational card wrapper -->
+        <main id="main" class="tw-flex tw-w-full tw-flex-row tw-justify-center tw-bg-clbg tw-px-3.5 tw-py-6 tw-font-semibold tw-max-md:tw-max-w-full" role="main">
+            <!-- Main body wrapper -->
             <div class="tw-flex tw-gap-3 tw-max-md:tw-flex-wrap tw-px-6">
-
+                <section class="tw-px-16 tw-pt-6 tw-pb-16 tw-bg-clbg tw-max-md:tw-px-5">
+                    <div class="profile-block tw-flex tw-gap-5 tw-max-md:tw-flex-col tw-max-md:tw-gap-0">
+                        <!-- Hidden title that only appers on mobile styling -->
+                        <h2 class="mobile-profile-title tw-justify-center tw-self-start tw-px-10 tw-py-6 tw-text-3xl tw-font-semibold tw-text-center tw-text-black tw-bg-cblue tw-max-md:tw-px-5">
+                            Camden Richter
+                        </h2>
+                        <!-- Profile content -->
+                        <article class="profile-content tw-flex tw-flex-col tw-w-[67%] tw-max-md:tw-ml-0 tw-max-md:tw-w-full">
+                            <div class="tw-flex tw-flex-col tw-max-md:tw-mt-10 tw-max-md:tw-max-w-full">
+                                <!-- Tablet / desktop profile title (hidden on mobile) -->
+                                <h2 class="profile-title tw-justify-center tw-self-start tw-px-10 tw-py-6 tw-text-3xl tw-font-semibold tw-text-center tw-text-black tw-bg-cblue tw-max-md:tw-px-5">
+                                    Camden Richter
+                                </h2>
+                                <!-- Profile body text -->
+                                <p class="profile-text tw-mt-7 tw-text-base tw-text-white tw-max-md:tw-max-w-full">
+                                    Camden is a visionary web developer, designer, and above-all computer geek dedicated to sculpting captivating digital landscapes. With a desire to supply the online realm with comprehensive website design, creation, and management services, he decided to form NetForge.
+                                    <br />
+                                    <br />
+                                    Camden approaches each project with an artist's eye and a coder's precision, seamlessly blending aesthetics with functionality to create immersive digital experiences that captivate and engage audiences. Through Camden's work at NetForge, clients are empowered to unleash the full potential of their online presence, driving growth, and fostering lasting relationships with their audience.
+                                    <br />
+                                    <br />
+                                    Outside of the digital realm, Camden is an avid learner and artist, always seeking inspiration from the world around. Whether it's embarking on outdoor adventures, immersing in linguistics, or taking photos, Camden's multifaceted interests enrich both personal and professional endeavors.
+                                </p>
+                            </div>
+                        </article>
+                        <!-- Optimized profile image -->
+                        <figure class="profile-img tw-flex tw-flex-col tw-ml-5 tw-w-[33%] tw-max-md:tw-ml-0 tw-max-md:tw-w-full">
+                            <img 
+                                srcset="./images/profile/profile-630_x_630.png 630w,
+                                    ./images/profile/profile.png 840w,
+                                    ./images/profile/profile-1120_x_1120.png 1120w"
+                                sizes="(max-width: 767px) 630px,
+                                    (min-width: 768px) 840px,
+                                    (min-width: 1024px) 1120px"
+                                src="./images/profile/profile.png"
+                                alt="A portrait photo of Camden Richter"
+                                loading="lazy">
+                        </figure>
+                    </div>
+                </section>
             </div>
         </main>
 

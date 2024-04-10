@@ -46,6 +46,42 @@
     }
 } */
 
+.profile-title {
+    font-size: 32px;
+}
+
+.profile-text {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.mobile-profile-title {
+    display: none;
+}
+
+.contact-section {
+    padding-top: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.contact-aside p,
+.contact-form input,
+.contact-form textarea {
+    font-weight: normal;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    background-color: var(--bs-tertiary);
+    color: var(--bs-secondary);
+    border: 1px solid var(--bs-secondary);
+}
+
+.contact-btn::content {
+    content: "Submitted";
+}
+
 @media screen and (max-width: 1024px) {
     .dnav {
         font-size: 24px;
@@ -65,6 +101,38 @@
 
     .card .btn {
         font-size: 32px;
+    }
+
+    .profile-block {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .profile-img {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .profile-content {
+        width: auto;
+    }
+
+    .contact-form {
+        width: auto;
+    }
+
+    .contact-aside {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .contact-aside p {
+        aspect-ratio: auto;
+        padding: 1rem;
+    }
+
+    .contact-aside button {
+        margin-top: 2rem;
     }
 }
 
@@ -91,5 +159,37 @@
 
     h1 {
         font-size: 60%;
+    }
+
+    main section {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .profile-title {
+        display: none;
+    }
+
+    .mobile-profile-title {
+        display: block;
+        width: 66%;
+        margin: 0 auto;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .profile-content {
+        order: 2;
+        width: auto;
+    }
+
+    .profile-img {
+        order: 1;
+        width: 66%;
+        margin: 0 auto;
+    }
+
+    .profile-block {
+        display: flex;
     }
 }
